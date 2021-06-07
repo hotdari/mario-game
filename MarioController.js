@@ -1,8 +1,16 @@
-class Mario {
+class State {
   constructor(){
-    this.currentState = ""
+    this.currentState = "normal"
     this.x = 0;
     this.y = 0;
+  }
+
+  get currentState() {
+    return this.currentState;
+  }
+
+  set cureentState(value){
+    this.currentState = value;
   }
 
   left(){
